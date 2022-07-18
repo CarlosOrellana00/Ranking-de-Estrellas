@@ -1,4 +1,4 @@
-:root{
+:root {
   --body-bg: #1c2451;
   --txt-color: #f1f1f1;
   --star-color: #d4d4d4;
@@ -11,51 +11,51 @@
   box-sizing: border-box;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   padding-top: 6rem;
   background-color: var(--body-bg);
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   color: var(--txt-color);
 }
 
-.container{
-  width: 100px;
-  max-height: 500px;
+.container {
+  width: 100%;
+  max-width: 500px;
   padding: 0 10px;
 }
 
-.header{
+.header {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.rating-wrapper{
+.rating-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.rating-label{
+.rating-label {
   margin-right: 2rem;
 }
 
-.rating-star{
+.rating-star {
   position: relative;
   display: flex;
   margin: 10px 0;
   flex-direction: row-reverse;
 }
 
-.rating-star input{
+.rating-star input {
   position: relative;
   width: 20px;
   height: 40px;
@@ -67,7 +67,7 @@ body{
   cursor: pointer;
 }
 
-.rating-star input::before{
+.rating-star input::before {
   content: '\eeb8';
   position: absolute;
   font-family: boxicons;
@@ -76,4 +76,9 @@ body{
   left: 4px;
   color: var(--star-color);
   transition: all .3s;
+}
+
+.rating-star input:nth-child(2n + 1)::before {
+  right: 4px;
+  left: initial;
 }
