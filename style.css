@@ -82,3 +82,24 @@ body {
   right: 4px;
   left: initial;
 }
+
+.rating-star input:hover ~ input::before,
+.rating-star input:hover::before,
+.rating-star input:checked ~ input::before,
+.rating-star input:checked::before {
+    color: var(--yellow);
+}
+
+.rating-star.rating-blue input:hover ~ input::before,
+.rating-star.rating-blue input:hover::before,
+.rating-star.rating-blue input:checked ~ input::before,
+.rating-star.rating-blue input:checked::before {
+    color: var(--blue);
+}
+
+.rating-star.rating-green input:hover ~ input::before,
+.rating-star.rating-green input:hover::before,
+.rating-star.rating-green input:checked ~ input::before,
+.rating-star.rating-green input:checked::before {
+    color: var(--green);
+}
